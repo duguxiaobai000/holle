@@ -1,28 +1,28 @@
-appHooks.put("com.example.app", new HookInfo[]{
-                new HookInfo("com.example.ClassName", new String[]{"methodName"}, 0),
-                new HookInfo("com.example.ClassName", new String[]{"methodName"}, null),
-                new HookInfo("com.example.ClassName", new String[]{"methodName"}, false),
-                new HookInfo("com.example.ClassName", new String[]{"method1", "method2"}, null)# holle
-测试项目
-name: push
+GIF、JPEG、JPG、MOV、MP4、PNG、SVG或WEBM预演
+此文件为空。缩进模式
+GIF、JPEG、JPG、MOV、MP4、PNG、SVG或 WEBM
+此文件为空。缩进模式
+再试一次空
+使用一个不空的文件。制表符
+这个文件是隐藏的。缩进尺寸
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - main
+再试一次换行模式
   schedule:
-    - cron: "* * * * *"
+另一份文件。无包裹
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+另一份文件。无包裹
     
-    permissions:
-      contents: write
+query为空
+query为空
  
-    steps:
-    - uses: actions/checkout@v2
+query为空
+query为空
       with:
         fetch-depth: 0
  
