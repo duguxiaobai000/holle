@@ -1,171 +1,204 @@
-GIF、JPEG、JPG、MOV、MP4、PNG、SVG或WEBM预演
-此文件为空。缩进模式
-GIF、JPEG、JPG、MOV、MP4、PNG、SVG或 WEBM
-此文件为空。缩进模式
-再试一次空
-使用一个不空的文件。制表符
-这个文件是隐藏的。缩进尺寸
+导入 de
+导入de.robv.android.Xposed.XposedHelpers；
+导入 de.安卓，我喜欢
+公共类
+切换
+突耳
+按键移动焦点。或者，使用
 
 on:
   workflow_dispatch:
   push:
     branches:
-再试一次换行模式
+欧洲心脏病学会
   schedule:
-另一份文件。无包裹
+切换
+突耳
 
+按键移动焦点。或者，使用
+欧洲心脏病学会
+然后
+package com.example.wechatremind;
+进口 android. app
+
+导入de.robv.android.Xposed.IXposedHookLoadPackage；
+    @Override
+public void handleLoadPackage(XC_LoadPackage.LoadPackageParam lpparam) throws Throwable{
+if (!lpparam.packageName.equals("com.tencent.mm")) {
+返回；//如果不是微信应用
+        }
+
+    /勾微信的消息撤回方法
+    试试{
+    // 根据你的分析，找到撤回消息的方法，下面只是示例
+    Class<?> msgClass = XposedHelpers.findClass("com.tencent.mm.modelmsg.MessageInfo", lpparam.classLoader);
+    XposedHelpers.findAndHookMethod(msgClass, "onMessageRecalled", String.class, new XC_MethodHook() {
+                @Override
+    钩式保护空洞（methookParam Param）
+                    super.beforeHookedMethod(param);
+    String messageId=（String）param.args[0]；//获取撤回的消息 ID
+    // 这里你可以获取消息发送者、内容等信息
+    // 然后根据需要进行防撤回提示或其他操作
+    makeText lpparam. appContext，“消息已撤回：”+messageId，Toast。LENGTH_SHORT）
+                }
+            });
+    }捕获（我喜欢）{
+            e.printStackTrace();
+        }
+    }
+}
 jobs:
   build:
-另一份文件。无包裹
+突耳
     
-query为空
-query为空
+移动到页面上的下一个交互元素。
+-名称：进行更改
  
-query为空
-query为空
+再试一次空
+此文件为空。缩进模式
       with:
-        fetch-depth: 0
+GIF、JPEG、JPG、MOV、MP4、PNG、SVG或 WEBM
  
-    - name: Make changes
-      run: |
-        echo "Some changes" >> changes.txt
-        date > time
-        date
-        echo 1 > 1
+    导入 androidx
+运行：|
+echo "Some changes" >> changes.txt
+日期>时间
+.concurrencyLevel(Runtime.getRuntime().availableProcessors() * 2)
+导入 java.net.InetAddress；
  
-    - name: Commit changes
-      uses: stefanzweifel/git-auto-commit-action@v5
-Skip to content
-Navigation Menu
-Sign in
-zjyzip
+导入 java.net.MalformedURLException；
+导入 java. net
+GIF、JPEG、JPG、MOV、MP4、PNG、SVG或 WEBM
+提取深度：0
+使用
+控制+百万
 /
-AdClose
-Public
-Code
-Pull requests
-Actions
-Commit
-tweak RequestHook.
- main
+GIF、JPEG、JPG、MOV、MP4、PNG、SVG或 WEBM
+此文件为空。缩进模式
+再试一次空
+-名称：进行更改
+运行：|
+导入 android. net
+导入安卓
+日期>时间
 @zjyzip
-zjyzip authored 2 days ago
-1 parent 9845daf
-commit 273da7c
-Showing 1 changed file with 15 additions and 18 deletions.
-  33 changes: 15 additions & 18 deletions33  
+导入安卓
+导入 androidx
+GIF、JPEG、JPG、MOV、MP4、PNG、SVG或 WEBM
+此文件为空。缩进模式
+-名称：进行更改  
 app/src/main/java/com/close/hook/ads/hook/gc/network/RequestHook.java
-Original file line number	Diff line number	Diff line change
-@@ -1,66 +1,59 @@
-package com.close.hook.ads.hook.gc.network;
-import android.content.ContentResolver;
-import android.content.Context;
-import android.content.Intent;
-import android.database.Cursor;
-import android.net.Uri;
-import android.util.Log;
-import androidx.annotation.Nullable;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.webkit.WebResourceRequest;
-import com.close.hook.ads.data.model.BlockedRequest;
-import com.close.hook.ads.data.model.RequestDetails;
-import com.close.hook.ads.data.model.Url;
-import com.close.hook.ads.hook.util.ContextUtil;
-import com.close.hook.ads.hook.util.DexKitUtil;
-import com.close.hook.ads.hook.util.HookUtil;
-import com.close.hook.ads.hook.util.StringFinderKit;
-import com.close.hook.ads.provider.UrlContentProvider;
-import com.google.common.cache.Cache;
-import com.google.common.cache.CacheBuilder;
-import org.luckypray.dexkit.result.MethodData;
-import java.io.IOException;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.nio.charset.StandardCharsets;
-import java.net.InetAddress;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLDecoder;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.ConcurrentHashMap;
-import kotlin.Triple;
-import de.robv.android.xposed.XposedBridge;
-import de.robv.android.xposed.XposedHelpers;
-public class RequestHook {
-    private static final String LOG_PREFIX = "[RequestHook] ";
-    private static final Object EMPTY_WEB_RESPONSE = createEmptyWebResourceResponse();
-    private static final ConcurrentHashMap<String, Boolean> dnsHostCache = new ConcurrentHashMap<>();
-    private static final ConcurrentHashMap<String, Boolean> urlStringCache = new ConcurrentHashMap<>();
+运行：|
+echo "Some changes" >> changes.txt
+再试一次空
+使用一个不空的文件。制表符
+使用一个不空的文件。制表符
+提取深度：0
+-名称：进行更改
+私有静态最终 URI CONTENT_URI=new URI
+@@ -73,21 +66,25 @@ public class RequestHook {
+使用一个不空的文件。制表符
+提取深度：0
+applicationContext = ContextUtil.applicationContext;
+echo "Some changes" >> changes.txt
+日期>时间
+-名称：进行更改
+运行：|
+此文件为空。缩进模式
+GIF、JPEG、JPG、MOV、MP4、PNG、SVG或 WEBM
+此文件为空。缩进模式
+再试一次空
+私有静态 final ConcurrentHashMap<String，Boolean>urlStringCache=new ConcurrentHashMap<>（）；
+运行：|
+再试一次空
+私有静态 final ConcurrentHashMap<String，Boolean>urlStringCache=new ConcurrentHashMap<>（）；
+使用
+echo "Some changes" >> changes.txt
+日期>时间
+.concurrencyLevel(Runtime.getRuntime().availableProcessors() * 2)
+导入 java.net.InetAddress；
+导入 java.net.MalformedURLException；
+导入 java. net
+再试一次
+再试一次
+GIF、JPEG、JPG、MOV、MP4、PNG、SVG或 WEBM
+此文件为空。缩进模式
+GIF、JPEG、JPG、MOV、MP4、PNG、SVG或 WEBM
+此文件为空。缩进模式
+再试一次空
+-名称：进行更改
+运行：|[导入 android. net] ";
+导入安卓
+日期>时间
+导入安卓
 
-    private static Context applicationContext;
+    导入 androidx
 
-    static {
-        ContextUtil.addOnApplicationContextInitializedCallback(() -> {
-            applicationContext = ContextUtil.applicationContext;
+    GIF、JPEG、JPG、MOV、MP4、PNG、SVG或 WEBM
+    此文件为空。缩进模式
+    再试一次空
             initHooks();
         });
     }
 
-    private static final Uri CONTENT_URI = new Uri.Builder()
+    使用一个不空的文件。制表符
         .scheme("content")
         .authority(UrlContentProvider.AUTHORITY)
-@@ -73,21 +66,25 @@ public class RequestHook {
-        .concurrencyLevel(Runtime.getRuntime().availableProcessors() * 2)
+使用一个不空的文件。制表符
+提取深度：0
         .build();
 
-    private static void initHooks() {
-    public static void init() {
-        try {
+    -名称：进行更改
+    私有静态最终 URI CONTENT_URI=new URI
+    @@ -73,21 +66,25 @@ public class RequestHook {
             setupDNSRequestHook();
             setupHttpRequestHook();
             setupOkHttpRequestHook();
             setWebViewRequestHook();
-            ContextUtil.addOnApplicationContextInitializedCallback(() -> {
-                applicationContext = ContextUtil.applicationContext;
+    使用一个不空的文件。制表符
+    提取深度：0
 
-                try {
+    此文件为空。缩进模式
                     setupDNSRequestHook();
                     setupHttpRequestHook();
                     setupOkHttpRequestHook();
                     setupWebViewRequestHook();
-                } catch (Exception e) {
-                    XposedBridge.log(LOG_PREFIX + "Error while hooking: " + e.getMessage());
+    再试一次空
+    使用一个不空的文件。制表符
                 }
             });
-        } catch (Exception e) {
-            XposedBridge.log(LOG_PREFIX + "Error while hooking: " + e.getMessage());
-            XposedBridge.log(LOG_PREFIX + "Error during initialization: " + e.getMessage());
+    使用一个不空的文件。制表符
+    提取深度：0
+    -名称：进行更改
         }
     }
 
-    public static void init() {
+    私有静态最终 URI CONTENT_URI=new URI
         initHooks();
     }
 
-    private static String calculateCidrNotation(InetAddress inetAddress) {
-        byte[] addressBytes = inetAddress.getAddress();
-        int prefixLength = 0;
-@@ -383,7 +380,7 @@ private static boolean processHttpRequest(Object request, Object response, URL u
+    @@ -73,21 +66,25 @@ public class RequestHook {
+    使用一个不空的文件。制表符
+    提取深度：0
+再试一次空
         }
     }
 
-    public static void setWebViewRequestHook() {
-    public static void setupWebViewRequestHook() {
-        try {
+    使用一个不空的文件。制表符
+    使用一个不空的文件。制表符
+    提取深度：0
             HookUtil.findAndHookMethod(
                 WebView.class,
-0 comments on commit 273da7c
-Please sign in to comment.
-Footer
-© 2025 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact
-Manage cookies
-Do not share my personal information
+-名称：进行更改
+私有静态最终 URI CONTENT_URI=new URI
+@@ -73,21 +66,25 @@ public class RequestHook {
+使用一个不空的文件。制表符
+提取深度：0
+此文件为空。缩进模式
+私有静态上下文；
+静态{
+ContextUtil.addOnApplicationContextInitializedCallback(() -> {
+applicationContext = ContextUtil.applicationContext;
+私有静态最终 URI CONTENT_URI=new URI
+@@ -73,21 +66,25 @@ public class RequestHook {
+.concurrencyLevel(Runtime.getRuntime().availableProcessors() * 2)
