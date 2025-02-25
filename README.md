@@ -202,3 +202,21 @@ applicationContext = ContextUtil.applicationContext;
 私有静态最终 URI CONTENT_URI=new URI
 @@ -73,21 +66,25 @@ public class RequestHook {
 .concurrencyLevel(Runtime.getRuntime().availableProcessors() * 2)
+@HookAnno
+@NiewAnno
+object AntiRevokeHooker : CommonSwitchHooker(),IDexFindBase {
+private object AntiRevokeMethod : DescData()
+override val funcName =“阻止撤回”
+override val funcDesc =“防止对方撤回消息以确保完整聊天体验“
+override fun initonce(){
+DexMethod(AntiRevokeMethod.desc)
+.getMethodInstance(HostInfo.appClassLoader)
+.hook {
+beforeIfEnabled {
+resultNull()
+override fun dexFind(initiate: DexKitBridge) {
+AntiRevokeMethod.desc = initiate.findMethod {
+matcher {
+usingEqStrings("doRevokeMsg xmlSrvMsgId=%d talker=%s isGet=%s")
+}.single().toDexMethod().tostring()
+一
